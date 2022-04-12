@@ -6,22 +6,17 @@ const forumSchema = new Schema({
         type:String,
         required:true
     },
-    title:{
+    theme:{
         type:String,
         required:true,
     },
     timestamp:{
         type: Number,
         required: true,
-        default: Date.now(),
     },
     commentsCount: {
         type: Number,
         require: true,
-    },
-    comments:{
-        type:Array,
-        required:false,
     },
 })
 

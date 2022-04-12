@@ -3,17 +3,16 @@ const Schema = mongoose.Schema
 
 const commentSchema = new Schema({
     commentFrom:{
-        type:String,
+        type:Object,
         required:true
     },
-    commentTo:{
+    commentOn:{
         type:String,
         required:true,
     },
     timestamp:{
         type: Number,
         required: true,
-        default: Date.now(),
     },
     comment: {
         type: String,

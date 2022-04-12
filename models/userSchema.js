@@ -14,6 +14,20 @@ const userSchema = new Schema({
     password:{
         type:String,
         required:true
+    },
+    commentCounter: {
+        type:Number,
+        required:true,
+        default: 0
+    },
+    notification: {
+        type:Boolean,
+        required:true,
+        default: true
+    },
+    createdTimestamp:{
+        type:Number,
+        required:true
     }
 })
 
